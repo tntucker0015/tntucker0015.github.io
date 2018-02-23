@@ -63,7 +63,7 @@ li {
 }
 
 li a {
-    display: inline;
+    display: block;
     float: left;
     color: #777777;
     padding: 12px 10px;
@@ -85,7 +85,7 @@ li a:hover {
     float: left;
     margin-top: 30px;
     padding: 10px;
-    width:650px;
+    width:66%;
     text-align: justify;
     background-color: #ffffff;
     border: solid 3px;
@@ -107,7 +107,7 @@ li a:hover {
 
 .connect {
     float: right;
-    width: 270px;
+    width: 30%;
     margin-top: 30px;
     overflow: auto;
     Text-align: center;
@@ -162,7 +162,7 @@ footer {
     float: left;
     margin-top: 30px;
     padding: 10px;
-    width:600px;
+    width:66%;
     text-align: justify;
     background-color: #ffffff;
     border: solid 3px;
