@@ -25,11 +25,14 @@ header {
 
 .name {
     float: left;
-    width: 33.3%;
+    width: 33.3%;;
+    padding-top: 35px;
+    height: 78px;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     position: relative;
     left: 200px;
+
     text-align: center;
     background-color: #4aaaa5;
 }
@@ -43,7 +46,7 @@ header {
 .headerlinks {
     float: right;
     position: relative;
-    top: 36px;
+    top: 28px;
     right: 200px;
     color: #777777;
 }
@@ -56,14 +59,21 @@ ul{
 }
 
 li {
-    float: left;
-    color: #777777;
+    float: right;
 }
 
-a {
+li a {
     display: inline;
-    padding: 8px;
-   }
+    float: left;
+    color: #777777;
+    padding: 12px 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #4aaaa5;
+    color: white;
+}
 
 .container::after {
     content: "";
@@ -81,7 +91,13 @@ a {
     border: solid 3px;
     border-color: #dddddd;
 }
- 
+
+.headername {
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+}
+
 .container2 {
     margin: 10px;
     padding: 10px;
@@ -102,6 +118,10 @@ a {
     border-color: #dddddd;
 }
 
+.cwm {
+    padding-top: 15px;
+    font-size: 24px;
+}
 .container3 {
     border-top: solid 3px;
     border-color: #dddddd;
@@ -166,63 +186,20 @@ footer {
     border: 3px solid #4aaaa5;
 }
 
-.Games {
+.Games, .Front-End, .backend, .fullstack, .javascript  {
     background-color: #4aaaa5;
     color: white;
     float: left;
     text-align: center;
     width: 200px;
+    height:25px;
     position: relative;
-    line-height: 0px;
-    bottom: 74px;
-}
-
-.Front-End {
-    background-color: #4aaaa5;
-    color: white;
-    float: left;
-    text-align: center;
-    width: 200px;
-    position: relative;
-    line-height: 0px;
-    bottom: 74px;
-}
-
-.backend {
-    background-color: #4aaaa5;
-    color: white;
-    float: left;
-    text-align: center;
-    width: 200px;
-    position: relative;
-    line-height: 0px;
-    bottom: 74px;
-}
-
-.fullstack {
-    background-color: #4aaaa5;
-    color: white;
-    float: left;
-    text-align: center;
-    width: 200px;
-    position: relative;
-    line-height: 0px;
-    bottom: 74px;
-}
-
-.javascript {
-    background-color: #4aaaa5;
-    color: white;
-    float: left;
-    text-align: center;
-    width: 200px;
-    position: relative;
-    line-height: 0px;
-    bottom: 74px;
+    line-height: 23px;
+    bottom: 75px;
 }
 
 .sticky {
-    position: -webkit -sticky;
+    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     padding: 5px;
@@ -232,40 +209,23 @@ footer {
     float: left;
     width: 85%;
     padding: 30px;
+    color: black;
     border-top: solid 3px;
     border-color: #cccccc;
 }
 
-.name-box {
-    display: inline-block;
-    width: 535px;
-    height: 30px;
-    border: 3px solid #cccccc;
-    position: relative;
-    bottom: 20px;
-}
-
 #namebox {
-    width: 535px;
+    width: 100%;
     height: 30px;
     font-size: 24px;
     position: relative;
     bottom: 2px;
     right: 2px;
-    color: red;
-}
-
-.email-box {
-    display: inline-block;
-    width: 535px;
-    height: 30px;
-    border: 3px solid #cccccc;
-    position: relative;
-    bottom: 20px;
+    color: black;
 }
 
 #emailbox {
-    width: 535px;
+    width: 100%;
     height: 30px;
     font-size: 24px;
     position: relative;
@@ -274,21 +234,16 @@ footer {
     color: black;
 }
 
-.message-box {
-    display: inline-block;
-    width: 535px;
+#messagebox {
+    width: 100%;
     height: 300px;
-    border: 3px solid #cccccc;
-    position: relative;
-    bottom: 20px;
+    line-height: 0px;
+    vertical-align: top;
+    font-size: 24px;
+    color: black;
 }
 
-#messagebox {
-    width: 535px;
+.textarea {
+    width: 100%;
     height: 300px;
-    font-size: 24px;
-    position: relative;
-    bottom: 2px;
-    right: 2px;
-    color: black;
 }
