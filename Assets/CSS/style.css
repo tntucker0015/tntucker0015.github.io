@@ -1,8 +1,9 @@
-
+/*homework wk1 - Personal Bio  */
 body {
     box-sizing: border-box;
 }
 
+/* stylings for the main body */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
@@ -12,6 +13,7 @@ body {
     background-image: url("../Images/skyscraper.png")
 }
 
+/* top of the page with name & links to other pages on this site */
 header {
     font-family:Arial, Helvetica, sans-serif;
     padding: 0px;
@@ -23,6 +25,7 @@ header {
     border-bottom-color: #4aaaa5;
 }
 
+/* name box in header */
 .name {
     float: left;
     width: 33.3%;;
@@ -37,12 +40,14 @@ header {
     background-color: #4aaaa5;
 }
 
+/* main container on all pages */
 .container {
     display: block;
     width:960px;
     margin:auto;
 }
 
+/* nav links in header */
 .headerlinks {
     float: right;
     position: relative;
@@ -51,6 +56,7 @@ header {
     color: #777777;
 }
 
+/* nav links in header */
 ul{
     list-style-type: none;
     margin: 0;
@@ -71,12 +77,6 @@ li a {
     transition: all 3s;
 }
 
-li a:active {
-    background-color: #777;
-    color: #4aaaa5;
-}
-
-
 li a:hover {
     background-color: #4aaaa5;
     color: white;
@@ -87,7 +87,7 @@ li a:hover {
     display: block;
     clear: both;
 }
-
+/* Main container header in index.html */
 .About-Tim {
     float: left;
     margin-top: 30px;
@@ -99,12 +99,13 @@ li a:hover {
     border-color: #dddddd;
 }
 
+/* main container on all pages */
 .headername {
     font-size: 30px;
     padding: 10px;
     color: black;
 }
-
+/* main container on index.html */
 .container2 {
     margin: 10px;
     padding: 10px;
@@ -112,6 +113,7 @@ li a:hover {
     border-color: #cccccc;
 }
 
+/* main container on contact page */
 .connect {
     float: right;
     width: 30%;
@@ -125,10 +127,13 @@ li a:hover {
     border-color: #dddddd;
 }
 
+/* main container on content page */
 .cwm {
     padding-top: 15px;
     font-size: 24px;
 }
+
+/* main container on content page */
 .container3 {
     border-top: solid 3px;
     border-color: #dddddd;
@@ -136,6 +141,7 @@ li a:hover {
     margin: 10px;
 }
 
+/* Main container on index.html */
 #Timprofile {
     float: left;
     height: 250px;
@@ -145,26 +151,27 @@ li a:hover {
     margin: 20px;
 }
 
-footer {
-    background-color: #666666;
-    padding-top: 16px;
-    padding-left: 400px;
-    margin: auto;
-    margin-top: 30px;
-    border-top: solid 3px;
-    border-top-color: #4aaaa5;
-}
-
+/* footer on all pages */
 #copyright { 
     width: 100px;
     height: 50px;
+    float: left;
+    position: relative;
+    left: 399px;
+    bottom: 3px
 }
 
+/* footer on all pages */
 #copyright1 {
     width: 15px;
     height: 15px;
+    float: left;
+    position: relative;
+    top: 21px;
+    left: 390px;
 }
 
+/* main container on contact and portfolio pages */
 .portfolio {
     float: left;
     margin-top: 30px;
@@ -175,7 +182,7 @@ footer {
     border: solid 3px;
     border-color: #dddddd;
 }
-
+/* main container on portfolio page */
 .portfolioimages {
     float: left;
     width: 85%;
@@ -185,6 +192,7 @@ footer {
     border-color: #cccccc;
 }
 
+/* images on portfolio page */
 .floating-box {
     display: inline-block;
     width: 200px;
@@ -193,6 +201,7 @@ footer {
     border: 3px solid #4aaaa5;
 }
 
+/* images on portfolio page */
 .Games, .Front-End, .backend, .fullstack, .javascript  {
     background-color: #4aaaa5;
     color: white;
@@ -205,13 +214,18 @@ footer {
     bottom: 75px;
 }
 
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
+footer {
+    width: 100%;
+    height: 44px;
     bottom: 0;
     padding: 5px;
+    margin: 30px;
+    background-color: #666666;
+    border-top: solid 3px;
+    border-top-color: #4aaaa5;
 }
 
+/* form box on contact page */
 .contactimages {
     float: left;
     width: 85%;
@@ -221,6 +235,7 @@ footer {
     border-color: #cccccc;
 }
 
+/* contact page main container */
 #namebox {
     width: 100%;
     height: 30px;
@@ -231,6 +246,7 @@ footer {
     color: black;
 }
 
+/* contact page main container */
 #emailbox {
     width: 100%;
     height: 30px;
@@ -241,6 +257,7 @@ footer {
     color: black;
 }
 
+/* contact page main container */
 #messagebox {
     width: 100%;
     height: 300px;
@@ -249,7 +266,17 @@ footer {
     color: black;
 }
 
+/* contact page main container */
 .textarea {
     width: 100%;
     height: 300px;
+}
+
+/* footer text  */
+h3 {
+    font-size: 16px;
+    float: left;
+    position: relative;
+    top: 11px;
+    left: 394px;
 }
