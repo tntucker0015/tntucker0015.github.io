@@ -5,39 +5,49 @@ body {
 
 /* stylings for the main body */
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     font-size: 24px;
     line-height: 32px;
     margin: auto;
     color: #777777;
-    background-image: url("../Images/skyscraper.png")
+    background-image: url("../images/matrixbinary.jpg");
+}
+
+p {
+ font-size: 18px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+
 }
 
 /* top of the page with name & links to other pages on this site */
 header {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     padding: 0px;
+    font-size: 24px;
     margin: 0px;
     width: 100%;
-    height: 110px;
+    height: 100px;
     background-color: #ffffff;
     border-bottom: solid 3px;
-    border-bottom-color: #4aaaa5;
+    border-bottom-color: black;
 }
 
 /* name box in header */
 .name {
     float: left;
     width: 33.3%;;
-    padding-top: 35px;
-    height: 78px;
+    height: 73%;
+    padding-top: 30px;
     color: white;
     font-size: 60px;
     position: relative;
-    left: 200px;
-
+    left: 10%;
     text-align: center;
-    background-color: #4aaaa5;
+    background-color: black;
 }
 
 /* main container on all pages */
@@ -51,9 +61,11 @@ header {
 .headerlinks {
     float: right;
     position: relative;
-    top: 28px;
-    right: 200px;
-    color: #777777;
+    top: 20px;
+    right: 10%;
+    background-color: black;
+    border: solid 2px black;
+   
 }
 
 /* nav links in header */
@@ -71,28 +83,38 @@ li {
 li a {
     display: block;
     float: left;
-    color: #777777;
+    color: white;
     padding: 12px 10px;
     text-decoration: none;
-    transition: all 3s;
 }
-
+/* adding action to link tabs when mouse hovers over */
 li a:hover {
-    background-color: #4aaaa5;
-    color: white;
+    background-color: #777777;
+    color: black;
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
-
+/* shows what page you are on */
+.active {
+    background-color:	#265B93;
+    color: black;
+    
+}
+/* clears bottom of page */
 .container::after {
     content: "";
     display: block;
     clear: both;
 }
 /* Main container header in index.html */
-.About-Tim {
+.About-Tim, .portfolio {
     float: left;
     margin-top: 30px;
     padding: 10px;
-    width:66%;
+    width: 60%;
     text-align: justify;
     background-color: #ffffff;
     border: solid 3px;
@@ -120,7 +142,7 @@ li a:hover {
     margin-top: 30px;
     overflow: auto;
     Text-align: center;
-    color: #4aaaa5;
+    color: black;
     font-size: 12px;
     background-color: #ffffff;
     border:solid 3px;
@@ -198,31 +220,33 @@ li a:hover {
     width: 200px;
     height: 200px;
     margin: 10px;
-    border: 3px solid #4aaaa5;
+    border: 3px solid balck;
 }
 
 /* images on portfolio page */
-.Games, .Front-End, .backend, .fullstack, .javascript  {
-    background-color: #4aaaa5;
+.Games, .elementC, .trivia, .fullstack, .javascript  {
+    background-color:	#265B93;
     color: white;
     float: left;
     text-align: center;
     width: 200px;
-    height:25px;
+    height: fit-content;
     position: relative;
     line-height: 23px;
     bottom: 75px;
 }
 
 footer {
+    
     width: 100%;
     height: 44px;
     bottom: 0;
     padding: 5px;
     margin: 30px;
+    margin-left: 0px;
     background-color: #666666;
     border-top: solid 3px;
-    border-top-color: #4aaaa5;
+    border-top-color: black;
 }
 
 /* form box on contact page */
@@ -254,7 +278,7 @@ footer {
     position: relative;
     bottom: 2px;
     right: 2px;
-    color: black;
+    color:black;
 }
 
 /* contact page main container */
@@ -279,4 +303,92 @@ h3 {
     position: relative;
     top: 11px;
     left: 394px;
+}
+/* moves the header for desktop and lg laptops */
+@media screen and (max-width: 1060px) {
+    .headerlinks {
+        right: 5%;
+    }
+    .name { 
+        left: 5%;
+    }
+}
+/* changes to the header and main container for laptops */
+ @media screen and (max-width: 980px) {
+    .name {
+        left: 0px;
+        font-size: 40px;
+        height: 58px;
+    }
+    .container {
+        width: 100%;
+}
+    .About-Tim, .portfolio, {
+        width: 60%;
+    }
+    .connect {
+        float: right;
+        width: 30%;
+ }
+    .headerlinks {
+        right: 0px;
+        top: 14px;
+    } 
+    header {
+        height: 85px;
+    }
+ }
+/* changes that are made for lg tablets / sm laptops */
+ @media screen and (max-width: 840px) {
+     .About-Tim, .connect, .portfolio {
+         width: 100%;
+         margin: auto;
+     }
+ }
+ 
+ /* changes that are made for lg phones  */
+ @media screen and (max-width: 768px) {
+     .About-Tim, .connect, .portfolio {
+         width: 100%;
+         margin-left: 0;
+         margin-right: 0;
+         float: left;
+         margin-top: 15px;
+     }
+     .About-Tim {
+         text-align: left;
+     }
+     #copyright1 {
+        left:165px;
+    }
+    h3 {
+        left: 170px;
+    }
+
+    #copyright {
+        left:180px;
+    }
+ }
+  /*  changes that are made for phones */
+ @media screen and (max-width: 640px) {
+    .name {
+        width: 100%;
+        Font-size: 60px;
+    }
+    .headerlinks{
+         width: 100%;
+         content: center;
+         padding-left: 25%;
+         padding-right: 25%;
+         }
+    #copyright1 {
+        left:115px;
+    }
+    h3 {
+        left: 120px;
+    }
+
+    #copyright {
+        left:130px;
+    }
 }
