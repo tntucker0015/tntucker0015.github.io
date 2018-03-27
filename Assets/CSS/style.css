@@ -9,8 +9,10 @@ body {
     font-size: 24px;
     line-height: 32px;
     margin: auto;
-    color: #777777;
-    background-image: url("../Images/matrixbinary.jpg");
+    color: #4b4a4a;
+    background-image: url("../Images/codebackground.png");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 p {
@@ -31,7 +33,7 @@ header {
     margin: 0px;
     width: 100%;
     height: 100px;
-    background-color: #ffffff;
+    background-color: #777777;
     border-bottom: solid 3px;
     border-bottom-color: black;
 }
@@ -116,7 +118,8 @@ li a:hover {
     padding: 10px;
     width: 60%;
     text-align: justify;
-    background-color: #ffffff;
+    background-color: #777777;
+    color: black;
     border: solid 3px;
     border-color: #dddddd;
 }
@@ -126,13 +129,12 @@ li a:hover {
     font-size: 30px;
     padding: 10px;
     color: black;
+    border-bottom: solid 3px #dddddd;
 }
 /* main container on index.html */
 .container2 {
     margin: 10px;
     padding: 10px;
-    border-top: solid 3px;
-    border-color: #cccccc;
 }
 
 /* main container on contact page */
@@ -144,7 +146,7 @@ li a:hover {
     Text-align: center;
     color: black;
     font-size: 12px;
-    background-color: #ffffff;
+    background-color: #777777;
     border:solid 3px;
     border-color: #dddddd;
 }
@@ -153,12 +155,14 @@ li a:hover {
 .cwm {
     padding-top: 15px;
     font-size: 24px;
+    border-bottom: solid 3px #dddddd;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* main container on content page */
 .container3 {
-    border-top: solid 3px;
-    border-color: #dddddd;
+    border-color: #777777;
     padding-top: 20px;
     margin: 10px;
 }
@@ -200,7 +204,7 @@ li a:hover {
     padding: 10px;
     width:66%;
     text-align: justify;
-    background-color: #ffffff;
+    background-color: #777777;
     border: solid 3px;
     border-color: #dddddd;
 }
@@ -210,8 +214,6 @@ li a:hover {
     width: 85%;
     margin: 10px;
     padding: 30px;
-    border-top: solid 3px;
-    border-color: #cccccc;
 }
 
 /* images on portfolio page */
@@ -241,8 +243,9 @@ footer {
     width: 100%;
     height: 44px;
     bottom: 0;
-    padding: 5px;
-    margin: 30px;
+    padding: 15px;
+    margin-top: 30px;
+
     margin-left: 0px;
     background-color: #666666;
     border-top: solid 3px;
@@ -255,8 +258,7 @@ footer {
     width: 85%;
     padding: 30px;
     color: black;
-    border-top: solid 3px;
-    border-color: #cccccc;
+
 }
 
 /* contact page main container */
