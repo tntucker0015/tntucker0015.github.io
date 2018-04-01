@@ -226,7 +226,7 @@ li a:hover {
 }
 
 /* images on portfolio page */
-.Games, .elementC, .trivia, .fullstack, .javascript  {
+.Games, .elementC, .trivia, .giphy, .javascript  {
     background-color:	#265B93;
     color: white;
     float: left;
