@@ -43,14 +43,25 @@ header {
     float: left;
     width: 33.3%;;
     height: 73%;
-    padding-top: 30px;
+    padding-top: 2%;
+    padding-right: 3%;
     color: white;
-    font-size: 60px;
+    font-size: 65px;
     position: relative;
     left: 10%;
     text-align: center;
     background-color: black;
 }
+
+/* .name a:hover {
+    background-color: #777777;
+    color: black;
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+} */
 
 /* main container on all pages */
 .container {
