@@ -237,7 +237,7 @@ li a:hover {
 }
 
 /* images on portfolio page */
-.Games, .elementC, .trivia, .giphy, .groupProject1  {
+.react, .elementC, .trivia, .giphy, .groupProject1, .burgerTime  {
     background-color:	#265B93;
     color: white;
     float: left;
